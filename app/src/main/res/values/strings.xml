@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Laboratory_1_money_converter</string>
+    <string name="app_name">Money converter</string>
+    <string name="title">Money converter</string>
+    <string name="euro">Euro</string>
+    <string name="dollar">Dollar</string>
+    <string name="ron">Ron</string>
+    <string name="euro_hint">value 1</string>
+    <string name="dollar_hint">value 2</string>
+    <string name="ron_hint">value 3</string>
+    <string name="left_button_text">Convert</string>
+    <string name="right_button_text">Clear</string>
 </resources>

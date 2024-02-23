@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -14,7 +14,8 @@
         android:layout_margin="20dp"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Money Converter"
+        android:text="@string/title"
+        android:textColor="@color/black"
         android:textSize="34sp" />
 
     <LinearLayout
@@ -26,10 +27,11 @@
 
         <TextView
             android:id="@+id/euroTextView"
-            android:layout_width="35dp"
+            android:layout_width="45dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Euro"
+            android:text="@string/euro"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <EditText
@@ -37,9 +39,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:autofillHints="10,50,100"
             android:ems="10"
+            android:hint="@string/euro_hint"
             android:inputType="text"
-            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -52,10 +57,11 @@
 
         <TextView
             android:id="@+id/dollarTextView"
-            android:layout_width="35dp"
+            android:layout_width="45dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Dollar"
+            android:text="@string/dollar"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <EditText
@@ -63,9 +69,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:autofillHints="10,50,100"
             android:ems="10"
+            android:hint="@string/dollar_hint"
             android:inputType="text"
             android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -78,10 +88,11 @@
 
         <TextView
             android:id="@+id/ronTextView"
-            android:layout_width="35dp"
+            android:layout_width="45dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Ron"
+            android:text="@string/ron"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <EditText
@@ -89,9 +100,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:autofillHints="10,50,100"
             android:ems="10"
+            android:hint="@string/ron_hint"
             android:inputType="text"
             android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -105,17 +120,23 @@
 
         <Button
             android:id="@+id/convertButton"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="300dp"
             android:layout_height="100dp"
+            android:layout_margin="10dp"
             android:layout_weight="1"
-            android:text="Convert" />
+            android:text="@string/left_button_text"
+            android:textColor="@android:color/system_accent3_900" />
 
         <Button
             android:id="@+id/clearButton"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="300dp"
             android:layout_height="100dp"
+            android:layout_margin="10dp"
             android:layout_weight="1"
-            android:text="Clear" />
+            android:text="@string/right_button_text"
+            android:textColor="@android:color/system_accent3_900" />
     </LinearLayout>
 
 </LinearLayout>
